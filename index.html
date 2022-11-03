@@ -1,68 +1,219 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-CN">
+	<head>
+		<meta charset="UTF-8" />
+		<title>搞点花里胡哨的</title>
+		<link rel="shortcut icon" type="image/x-icon" href="chengzi.ico" />
+		<style>
+			@font-face {
+				font-family: 'JetBrains Mono';
+				src: url('https://gw.alipayobjects.com/os/k/app/JetBrainsMono-Regular.ttf') format('truetype');
+			}
 
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="theme-color" content="#000000">
-    <meta name="description" content="Web site created using CloudBase Webify">
-    <title>Hello Webify！</title>
-    <style>
-        body {
-            margin: 0;
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-                'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-                sans-serif;
-            -webkit-font-smoothing: antialiased;
-            -moz-osx-font-smoothing: grayscale;
-        }
-        code {
-            font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-                monospace;
-        }
-        .App {
-            text-align: center;
-        }
+			* {
+				font-family: JetBrains Mono, SF Mono, PingFang SC, Hiragino Sans GB, Microsoft YaHei, Helvetica Neue, Helvetica, Arial, sans-serif;
+			}
 
-        .App-logo {
-            height: 40vmin;
-            pointer-events: none;
-        }
+			body {
+				height: 100vh;
+				color: #fff;
+				background: #15141a;
+				margin: 0;
+				font-size: 14px;
+				line-height: 1.4;
+			}
+		</style>
 
-        @media (prefers-reduced-motion: no-preference) {
-            .App-logo {
-                animation: App-logo-spin infinite 20s linear;
-            }
-        }
+	</head>
+	<body>
+		<script>
+			let styles = `\
+			
+	/* 
+	* 今天想起来一个好玩的东西          
+	* 刚好又是一个特殊的日子          
+	* 就做了这么个花里胡哨的东西          
+	*/
 
-        .App-header {
-            background-color: #efefef;
-            min-height: 100vh;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            font-size: calc(10px + 2vmin);
-            color: black;
-        }
+	/* 废话好像有点太多了 */          
 
-        .App-link {
-            color: #108ee9;
-        }
-    </style>
-</head>
+	/* 反正就是先搞一个写代码的pre标签 */          
+	pre {
+		/* 不要太枯燥了, 就先变色来玩玩 */
+		color: #55ffff;
+		width: 100%;
+		height: 100%;
+		position: absolute;
+		top: 0;
+		box-sizing: border-box;
+		padding: 24px 16px;
+		margin-top: 0;
+		overflow-y: auto;
+		transition: all 500ms;
+	}
 
-<body>
-    <div id="root">
-        <div class="App">
-            <header class="App-header">
-                <img src="https://main.qcloudimg.com/raw/2f3b21706c37e8685efe5c60b26ceb24.png" class="App-logo" alt="logo">
-                <p>Welcome to Webify！</p>
-                <a class="App-link" href="https://webify.cloudbase.net/"
-                    target="_blank" rel="noopener noreferrer">webify.cloudbase.net</a>
-            </header>
-        </div>
-    </div>
-</body>
+	/* 
+	* emmm我还是不太喜欢斜体          
+	* 给我变正          
+	*/
+	pre em {
+		font-style: normal;
+	}
 
+	/* 
+	* 好了, 既然搞花的          
+	* 那不得来给代码颜色高亮下          
+	*/
+
+	/* 先来点紫色 */
+	.selector, .selector .key {
+		color: #f694ff;
+	}          
+
+	/* 再来点白色 */
+	.key, .comment {
+		color: #edecee;
+	}          
+
+	/* 再整点橙色 */
+	.value {
+		color: #ffca85;
+	}          
+
+	/*
+	* 不玩了不玩了说正事          
+	* 我先把代码移到下面来 */          
+	pre {
+		top: 30%;
+		height: 60%
+	}
+                    
+	/* 
+	* 然后就是正文了          
+	* 不要急先让我写点样式          
+	*/
+	.test_1 {  /* 我懒得命名了就叫test吧 */
+		text-align: center;
+		margin: auto;
+		display: block;
+		position: relative;
+	}
+
+	/* 
+	* 好了我已经写好了          
+	* 只不过只有聪明的人才能看见          
+	* 你看不见?          
+	*/
+
+	/* 
+	* 行我给这些字加点效果           
+	*/
+		
+	.test_2{
+	/* 我先把它调大点 */           
+		font-size: 200px;
+		color: #fefefe;
+		text-shadow: 
+			/* 准备了要来了 */                      
+			0 0 0.3em #5c5c5c,
+			/* 看到了吗? */                      
+			/* 没看到?           
+				那再来闪几次 */                      
+			0px 2px 0px #b0b0b0,                      
+			0px 3px 0px #a0a0a0,                      
+			0px 4px 0px #909090,                      
+			0 0 0.5em #0ae642,                        
+			/* 这回看清楚了吧?                        
+				ok我还是让他们发光吧, 容易看一点 */                        
+			0px 5px 10px rgba(0, 0, 0, .9);
+	} 
+
+	/* 
+	* 好了完事了, 散了散了
+	*/
+	/*
+	* @Author:    Lagrange橙子
+	* @Time:      2022\//11\//3 15\:15
+	*/
+   
+
+
+`;
+
+			const getStyleHtml = function() {
+				return document.getElementById('style-text').innerHTML;
+			};
+
+			let openComment = false;
+
+			const writeStyleChar = function(which) {
+				if (which === '/' && !openComment) {
+					openComment = true;
+					styles = getStyleHtml() + which;
+				} else if (which === '/' && openComment) {
+					openComment = false;
+					styles = getStyleHtml().replace(
+						/(\/[^\/]*\*)$/,
+						'<em class="comment">$1/</em>',
+					);
+				} else if (which === ':') {
+					styles = getStyleHtml().replace(
+						/([a-zA-Z- ^\n]*)$/,
+						'<em class="key">$1</em>:',
+					);
+				} else if (which === ';') {
+					styles = getStyleHtml().replace(
+						/([^:]*)$/,
+						'<em class="value">$1</em>;',
+					);
+				} else if (which === '{') {
+					styles = getStyleHtml().replace(
+						/(.*)$/,
+						'<em class="selector">$1</em>{',
+					);
+				} else {
+					styles = getStyleHtml() + which;
+				}
+				document.getElementById('style-text').innerHTML = styles;
+				return document
+					.getElementById('style-tag')
+					.insertAdjacentHTML('beforeend', which);
+			};
+
+			const writeStyles = function(message, index, interval) {
+				if (index < message.length) {
+					const pre = document.getElementById('style-text');
+					pre.scrollTop = pre.scrollHeight;
+					writeStyleChar(message[index++]);
+					return setTimeout(
+						() => writeStyles(message, index, interval),
+						interval,
+					);
+				}
+			};
+
+			document.body.insertAdjacentHTML(
+				'beforeend',
+				`\<style id="style-tag"></style>
+          <div class="test-box, test_2">
+            <span class="test_1">
+				<font color="#15141a">KFC V ME 50</font>
+			</span>
+         </div>
+         <pre id="style-text"></pre>\
+		`,
+			);
+			writeStyles(styles, 0, 24);
+		</script>
+
+		<script>
+			window.dataLayer = window.dataLayer || [];
+
+			function gtag() {
+				dataLayer.push(arguments);
+			}
+			gtag('js', new Date());
+			gtag('config', 'G-YVEG7R01YM');
+		</script>
+	</body>
 </html>
